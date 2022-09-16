@@ -689,6 +689,7 @@ nav ul li.btn.hide i:before {
 
   .mobile-fluid {
     display: block;
+    height: 30vh;
   }
 
   .ways {
@@ -722,6 +723,7 @@ nav ul li.btn.hide i:before {
     background: none;
   }
 
+  
   .cards-content {
     float: none !important;
     color: #000;
@@ -729,6 +731,7 @@ nav ul li.btn.hide i:before {
 
   .mobile-cards {
     display: block;
+    height: 30vh;
   }
 
   .procent-circle {
