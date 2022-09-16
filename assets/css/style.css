@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ====================== Header Links ==================== */
+
+.header {
+  background: #0853a2;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding-inline: 10%;
+  padding-block: 15px;
+}
+
+.header-link-underline span {
+  text-decoration: underline;
+  padding-right: 20px;
+}
+
+.header-links-sc {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.header-link-img {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  position: relative;
+}
+
+.header-link-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(136, 136, 136, 0.47);
+}
+
+.header-link-img img {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+/* ====================== Navbar ============================ */
+
+
+
+nav {
+  background: #fff;
+  padding: 5px 11%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+}
+
+nav ul li {
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+nav ul li.items {
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.items a {
+  color: #0853a2;
+  font-weight: 500;
+}
+
+nav ul li.logo {
+  padding-right: 30px;
+
+}
+
+nav ul li.logo img {
+  width: 30px;
+
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-decoration: none;
+  transition: .4s;
+}
+
+nav ul li i {
+  font-size: 23px;
+}
+
+nav ul li.btn {
+  display: none;
+}
+
+nav ul li.btn.hide i:before {
+  content: '\f00d';
+}
+
+
+
+/* ========================= Checkout ================= */
+
+.mobile-checkout {
+  display: none;
+  background: url('../images/checkout-bg.jpg');
+  background-position: 60% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+.checkout {
+  background: url('../images/checkout-bg.jpg');
+  background-position: 60% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+  padding-inline: 11%;
+  padding-top: 80px;
+}
+
+.checkout-content {
+  padding-top: 50px;
+  width: 60%;
+}
+
+
+.checkout-content h2 {
+  font-size: 40px;
+  font-size: 2.2rem;
+  line-height: 1.25em;
+  font-weight: 300;
+  color: #2c2e2f;
+}
+
+.checkout-content p {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.333em;
+  color: #2c2e2f;
+}
+
+
+.checkout-btn {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 45px;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 15px 70px;
+  background: #0070ba;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: #055c96;
+}
+
+
+.checkout-shop {
+  color: #0070ba;
+  text-decoration: none;
+}
+
+.checkout-shop:hover {
+  text-decoration: underline;
+}
+
+
+.checkout img {
+  width: 30%;
+}
+
+
+/* ====================== Steps ============================  */
+
+.steps {
+  background: #333;
+  color: #fff;
+  padding-block: 40px;
+  padding-inline: 11.5%;
+  display: flex;
+}
+
+
+.steps div {
+  display: flex
+}
+
+.steps div p:nth-child(1) {
+  padding: 11px 20px;
+  border: 1px solid silver;
+  font-weight: 700;
+  font-size: 1.071rem;
+  line-height: 1.5em;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.steps div p:nth-child(2) {
+  font-size: 14px;
+}
+
+
+/* ======================= Speed ============================ */
+
+.speed {
+  padding-block: 80px;
+  text-align: center;
+}
+
+.speed h2 {
+  font-size: 45px;
+  font-weight: 200;
+  line-height: 1.25;
+}
+
+
+.speed p {
+  font-size: 18px;
+  line-height: 1.5em;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+/* ====================== Fluid ================================ */
+
+.mobile-fluid {
+  display: none;
+  background: url('../images/fluid.jpg');
+  background-size: cover;
+  background-position: 60% center;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+.fluid {
+  background: url('../images/fluid.jpg');
+  background-size: cover;
+  background-position: 60% center;
+  background-repeat: no-repeat;
+}
+
+.fluid-container {
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: content-box;
+  min-width: 940px;
+  max-width: 1150px;
+  padding-top: 250px;
+  padding-bottom: 350px;
+}
+
+.fluid-content {
+  width: 49%;
+  float: right;
+}
+
+.fluid-content h2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+
+.fluid-content p {
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 12px;
+}
+
+
+.fluid-content a {
+  color: #0070ba;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fluid-content a:hover {
+  text-decoration: underline;
+}
+
+
+/* ======================= Ways ============================= */
+
+.ways {
+  padding-top: 110px;
+  padding-inline: 11%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.ways div {
+  margin-top: -50px;
+}
+
+.ways div h2 {
+  font-size: 2rem;
+  line-height: 1.25em;
+  font-weight: 300;
+  color: #2c2e2f;
+}
+
+.ways div p {
+  padding-top: 5px;
+  font-size: 15px;
+  color: #2c2e2f;
+}
+
+/* ======================= Phrase ============================== */
+
+.phrase {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.25;
+  font-size: 40px;
+  padding-block: 100px;
+  color: #fff;
+  background-image: radial-gradient(circle farthest-side at center bottom,#009cde,#003087 0);
+}
+
+
+/* ======================= Buyers ============================ */
+
+.buyers {
+  padding-inline: 15%;
+  padding-top: 120px;
+  display: flex;
+  gap: 80px;
+}
+
+
+.buyers div {
+  width: 53%;
+  margin-top: 75px;
+}
+
+
+.buyers div h2 {
+  font-size: 2rem;
+  font-weight: 280;
+}
+
+.buyers div p {
+  font-size: 1.071rem;
+  line-height: 1.5em;
+  color: #2c2e2f;
+  padding-top: 6px;
+  padding-bottom: 12px;
+}
+
+
+.buyers div a {
+  color: #0070ba;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.buyers div a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ====================== Cards ============================= */
+
+.mobile-cards {
+  display: none;
+  background: url('../images/cards.jpg');
+  background-size: cover;
+  background-position: 60% center;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+
+.cards {
+  background: url('../images/cards.jpg');
+  background-size: cover;
+  background-position: 60% center;
+  background-repeat: no-repeat;
+}
+
+.cards-content {
+  float: left !important;
+  color: #fff;
+}
+
+
+/* ==================== Procent =========================== */
+
+
+.procent {
+  margin-top: 110px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.procent p {
+  font-size: 40px;
+  font-weight: 300;
+  color: #009cde;
+}
+
+
+.procent-circle {
+  display: flex;
+    width: 60px;
+    padding: 55px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin: 0 auto 0.333em;
+    border: 1px solid #009cde;
+    border-radius: 50%;
+    font-size: 48px;
+    line-height: 1.25em;
+    font-weight: 100;
+    color: #009cde;
+    letter-spacing: -.02em;
+}
+
+
+/* ===================== Fees ============================= */
+
+
+
+.fees {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding-block: 100px;
+}
+
+.fees h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.fees a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.fees a:hover {
+  text-decoration: underline;
+}
+
+.fees p {
+  padding-block: 25px;
+}
+
+
+/* ======================= Sign Shoping ==================== */
+
+.sign-shoping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 70px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.sign-shoping div h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+
+/*======================= Footer ============================ */
+
+.footer {
+  padding-inline: 15%;
+  padding-block: 30px;
+}
+
+.footer-info {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-fs-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 25%;
+}
+
+
+.footer-lang span {
+  padding-left: 10px;
+}
+
+.footer-copyright {
+  padding-top: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+
+}
+
+.footer-copyright div {
+  font-size: 12px;
+}
+
+.footer-copyright div span {
+  padding-left: 10px;
+}
+
+.privacy {
+  display: none;
+}
+
+/* =================== Responsive ======================== */
+
+@media screen and (max-width: 1200px) {
+  .checkout {
+    padding-inline: 5%;
+  }
+  .checkout-content {
+    padding-top: 0;
+  }
+  .checkout-content h2 {
+    font-size: 30px;
+  }
+  
+  .checkout-content p {
+    font-size: 14px;
+  }
+  .checkout-btn {
+    padding: 15px 60px;
+  }
+  
+  .steps {
+    padding-inline: 5%;
+  }
+
+  .steps div p:nth-child(2) {
+    font-size: 12px;
+  }
+}
+
+
+@media all and (max-width: 900px) {
+
+  nav {
+    padding: 5px 30px;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+  nav ul li.items {
+    width: 100%;
+    display: none;
+  }
+
+  nav ul li.items.show {
+    display: block;
+  }
+
+  nav ul li.btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .header-links {
+    font-size: 10px;
+    padding-inline: 5%;
+  }
+
+  .mobile-checkout {
+    display: block;
+  }
+
+  .checkout {
+    background: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .checkout img {
+    display: none;
+  }
+  
+  .checkout-content {
+    width: 100%;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 30px;
+    padding-inline: 0;
+    padding-block: 20px;
+  }
+
+
+  .step-3 {
+    padding-left: 10px;
+  }
+
+  .steps div p:nth-child(1) {
+    margin-right: 10px;
+  }
+
+  .steps div:not(.step-3) {
+    align-items: center;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  .steps div p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  .speed h2 {
+    font-size: 25px;
+  }
+  
+  
+  .speed p {
+    font-size: 14px;
+    padding-inline: 5px;
+  }
+  
+  .fluid {
+    background: none;
+  }
+
+  .fluid-container {
+    min-width: auto !important;
+    max-width: auto !important;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-inline: 10%;
+  }
+
+  .fluid-content {
+    float: none;
+    width: 100%;
+  }
+
+  .mobile-fluid {
+    display: block;
+  }
+
+  .ways {
+    padding-bottom: 40px;
+  }
+
+  .ways img {
+  display: none;
+  }
+
+  .phrase {
+    font-size: 20px;
+  }
+
+  .buyers img {
+    display: none;
+  }
+
+  .buyers {
+   padding-top: 40px;
+   padding-bottom: 40px;
+   padding-inline: 5%;
+  }
+
+  .buyers div {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .cards {
+    background: none;
+  }
+
+  .cards-content {
+    float: none !important;
+    color: #000;
+  }
+
+  .mobile-cards {
+    display: block;
+  }
+
+  .procent-circle {
+   font-size: 35px;
+  }
+  
+  .procent-circle {
+    font-size: 35px;
+    padding: 50px;
+  }
+
+  .procent p {
+    font-size: 20px;
+  }
+
+  
+  
+  .fees h2 {
+    font-size: 25px;
+  }
+
+  .fees p {
+    font-size: 16px;
+    padding-inline: 5px;
+  }
+
+  .sign-shoping div h2 {
+    font-size: 20px;
+  }
+
+  .footer-lang {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-copyright {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .privacy {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-copyright span span {
+    display: none;
+  }
+
+  .footer-copyright div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-checkout {
+    background-position: 80% center;
+    height: 30vh;
+  }
+
+  .checkout-content h2 {
+    font-size: 25px;
+  }
+
+  .checkout-content p {
+    font-size: 14px;
+  }
+
+  .checkout-shop {
+    font-size: 14px;
+  }
+
+  .steps div p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .fluid-container {
+   padding-inline: 5%;
+  }
+
+  .fluid-content h2 {
+    font-size: 20px;
+  }
+
+  .fluid-content p {
+    font-size: 12px;
+  }
+
+  .fluid-content a {
+    font-size: 12px;
+  }
+  
+  .ways {
+    padding-top: 80px;
+    padding-inline: 5%;
+  }
+
+  .ways div h2 {
+    font-size: 20px;
+  }
+
+  .ways div p {
+    font-size: 12px;
+  }
+
+  .phrase  {
+    font-size: 18px;
+    padding-block: 50px;
+  }
+
+  .buyers div h2 {
+    font-size: 20px;
+  }
+
+  .buyers div p {
+    font-size: 12px;
+  }
+
+  .buyers div a {
+    font-size: 12px;
+  }
+
+  .procent {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .fees h2 {
+    font-size: 20px;
+  }
+
+  .fees p {
+   font-size: 12px;
+  
+  }
+
+  .fees a {
+    font-size: 14px;
+  }
+  
+  .checkout-btn {
+    padding: 15px 50px;
+    font-size: 12px;
+  }
+}
