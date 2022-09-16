@@ -222,7 +222,9 @@ nav ul li.btn.hide i:before {
 
 
 .steps div {
-  display: flex
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
 }
 
 .steps div p:nth-child(1) {
